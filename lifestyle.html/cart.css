@@ -1,0 +1,97 @@
+
+*{
+ /* margin-left: 20px; */
+ font-family: ProximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#topLine{
+    font-size: 26px;
+    font-weight: 400;
+    color: #19191a;
+    margin-left: 30px;
+}
+.offerBar{
+    border: 1px solid rgb(206, 199, 199);
+    height: 60px;
+    width: 90%;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;;
+    color: #ff5100;
+    margin-left: 30px;
+}
+#itemBar{
+    margin-top: 10px;
+    border: 1px solid rgb(161, 156, 156);
+    height: 50px;
+    width: 65%;
+    display: flex;
+    font-size: 13px;
+    color: #3d464d;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+#left{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#right{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+#logo{
+    /* border: 1px solid red; */
+    height: 30px;
+    width: 120px;
+    font-size: 13px;
+    color: #3d464d;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#logoImage{
+    height: 100%;
+    width: 100%;
+}
+
+#cartBox{
+    margin-top: 15px;
+    border: 1px solid grey;
+    width: 65%;
+    height: 200px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: flex;
+}
+#totalBox{
+    border: 1px solid red;
+    height:400px;
+    width: 25%;
+    float: left;
+    margin-left: 30px;
+}
+ #maindiv1{
+    border: 1px solid red;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#imgdiv{
+    border: 1px solid red;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    height: 95%;
+    width: 37%;
+} 
+/* #maindiv2{
+    border: 1px solid aqua;
+    width: 45%;
+    height: 95%;
+
+} */
