@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .imgdiv{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;
+        }
+        .imgdiv>img{
+            
+            width: 400px;
+            height: 400px;
+        }
+        h4{
+            font-style: italic;
+            font-weight: bolder;
+            font-size: x-large;
+            color: red;
+        }
+        p{
+            color: black;
+            font-size: x-small;
+            
+
+        }
+        .button1>btn1{
+            padding: 10px 10px;
+            color: seashell;
+        }
+        #underline{
+            text-decoration: underline;
+            color: #fbbb4e;
+            
+
+
+        }
+        price{
+            color: black;
+        }
+        div>button{
+            padding: 20px 40px;
+            grid-gap:10px
+        }
+        
+
+
+        
+        
+
+        
+
+    </style>
 </head>
 <body>
-    <h1>hi i m deeksha sharma</h1>
+    <div class="container">
+        
+        
+
+    </div>
 </body>
 </html>
+<script>
+    var product=[{
+        image:"https://static.cilory.com/568666-thickbox_default/black-full-sleeves-stretch-velvet-shirt-by-estonished.jpg",
+        image1:"https://static.cilory.com/568667-thickbox_default/black-full-sleeves-stretch-velvet-shirt-by-estonished.jpg",
+        image2:"https://static.cilory.com/568669-thickbox_default/black-full-sleeves-stretch-velvet-shirt-by-estonished.jpg",
+        image3:"https://static.cilory.com/568670-thickbox_default/black-full-sleeves-stretch-velvet-shirt-by-estonished.jpg",
+        Price:"999",
+        name:"shortkurta",
+        color:"black"
+    }]
+    display(product)
+    function  display(product) {
+        product.map(function(elem){
+            var imgdiv=document.createElement("div");
+            imgdiv.setAttribute("class","imgdiv")
+
+            var pricediv=document.createElement("div")
+            pricediv.setAttribute("class","pricediv")
+
+            var img=document.createElement("img")
+            img.setAttribute("src",elem.image)
+
+            var img1=document.createElement("img")
+            img1.setAttribute("src",elem.image1)
+
+            var img2=document.createElement("img")
+            img2.setAttribute("src",elem.image2)
+
+            var img3=document.createElement("img")
+            img3.setAttribute("src",elem.image3)
+
+            var price=document.createElement("h4")
+            price.textContent="₹ "+elem.Price +  " Inclusive of all taxes"
+
+            var name=document.createElement("p")
+            name.textContent-elem.name
+
+            var text=document.createElement("p")
+            text.textContent="free shipping on orders above INR 999 "
+            text.id="underline"
+
+            var text1=document.createElement("p")
+            text1.textContent="color:  "+elem.color
+
+            var size=document.createElement("p")
+            size.textContent="size:"
+
+            var sizediv=document.createElement("div")
+            sizediv.setAttribute("class","button")
+            // sizediv.class="button"
+            var btn1=document.createElement("button")
+            btn1.textContent="XS"
+            var btn2=document.createElement("button")
+            btn2.textContent="S"
+            var btn3=document.createElement("button")
+            btn3.textContent="M"
+            var btn4=document.createElement("button")
+            btn4.textContent="L"
+            var btn5=document.createElement("button")
+            btn5.textContent="XL"
+            sizediv.append(btn1,btn2,btn3,btn4,btn5)
+            
+
+
+            var basketdiv=document.createElement("div")
+            basketdiv.setAttribute("id","basket")
+
+            var basket=document.createElement("select")
+            var option1=document.createElement("option")
+            option1.textContent="1"
+            var option2=document.createElement("option")
+            option2.textContent="2"
+            var option3=document.createElement("option")
+            option3.textContent="3"
+
+            basket.append(option1,option2,option3,option3)
+
+            var addbasket=document.createElement("button")
+            addbasket.textContent=" ADD TO BASKET "
+
+            basketdiv.append(basket,addbasket)
+
+
+
+            
+           
+
+
+            imgdiv.append(img,img1,img2,img3)
+            pricediv.append(price,name,text,text1,size,sizediv,basketdiv)
+            document.querySelector(".container").append(imgdiv,pricediv)
+
+        })
+        
+    }
+</script>
