@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7fc6a624dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav11">
+        <div class="log">
+            <img src="https://www.visa.com/images/merchantoffers/2021-02/1614256570738.Lifestyle.png" alt=""  width="100%" height="100%">
+        </div>
+        <div class="det">
+            <i class="fas fa-phone-alt fa-lg nu"><span class="num">Call 1800-123-1555</span></i>
+            <div class="num">Monday-saturday,9.00AM-7.00PM</div>
+        </div>
+    </div>
+    <hr>
+    <div class="ssm">
+        <div class="sa">Select a shipping method</div>
+        <div class="seldiv">
+            <div><button class="hd">Home Delivery</button></div>
+            <div><button class="d">Click & Collect</button></div>
+        </div>
+    </div>
+
+    <div class="ays">
+        <h3>Add your shipping address</h3>
+        <div class="hays">Full Name</div>
+        <input type="text" class="inpu">
+        <div class="hays">Mobile Number</div>
+        <input type="text" class="inpu">
+        <div class="hays">Pincode</div>
+        <input type="text" class="inpu">
+        <div class="hays">City</div>
+        <input type="text" class="inpu">
+        <div class="hays">State</div>
+        <input type="text" class="inpu">
+        <div class="hays">Building name or number</div>
+        <input type="text" class="inpu">
+        <div class="hays">Landmark</div>
+        <input type="text" class="inpu">
+    </div>
+   <div class="spm">
+       <div>Select a payment method</div>
+       <div class="cd">
+           <div><button class="cc">Credit Card</button></div>
+           <div><button class="dc">Debit Card</button></div>
+       </div>
+       <div class="hays" style="margin-top: 50px;">Card Number</div>
+        <input type="text" class="inpu">
+        <div class="hays">Name On Card</div>
+        <input type="text" class="inpu">
+        <div class="hays">Expiry Date</div>
+        <input type="date" class="inpu">
+        <div class="hays">CVV</div>
+        <input type="text" class="inpu" style="width: 80px; height: 40px;">
+        <a href="thanks.html"><button class="pn">Pay Now</button></a>
+   </div>
+</body>
+</html>
+<script>
+    document.querySelector(".hd").addEventListener("click", function(){
+        alert("Home Delivery Selected")
+    })
+    document.querySelector(".d").addEventListener("click", function(){
+        alert("Click & Collect Selected")
+    })
+    document.querySelector(".cc").addEventListener("click", function(){
+        alert("Credit Card Has Been Choosed For The Payment")
+    })
+    document.querySelector(".dc").addEventListener("click", function(){
+        alert("Debit Card Has Been Choosed For The Payment")
+    })
+    document.querySelector(".pn").addEventListener("click", function(){
+        alert("Payment Sucessfully Done")
+    })
+
+
+</script>
