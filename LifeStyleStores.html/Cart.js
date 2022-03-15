@@ -109,6 +109,7 @@ cartData.map(function(elem){
     document.querySelector("#cc").append(maindiv);
     
 
+    
     // document.getElementById("subTotalPrice").textContent=T;
     // document.getElementById("finalTotalPrice").textContent=T;
 })
