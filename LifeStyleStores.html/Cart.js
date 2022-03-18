@@ -107,7 +107,6 @@ cartData.map(function(elem){
     rightdiv.append(div1,div2,div3);
     maindiv.append(leftdiv,rightdiv);
     document.querySelector("#cc").append(maindiv);
-    
 
     
     // document.getElementById("subTotalPrice").textContent=T;
